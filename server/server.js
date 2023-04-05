@@ -1,26 +1,21 @@
 const cors = require("cors");
 const express = require("express");
 require("dotenv").config();
-
+const path = require("path");
+const { authMiddleware } = require("./utils/auth");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const uuid = require("uuid");
-
-const { ApolloServer } = require("apollo-server-express");
-const path = require("path");
-
-const { typeDefs, resolvers } = require("./schemas");
-const { authMiddleware } = require("./utils/auth");
 const db = require("./config/connection");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+const { ApolloServer } = require("apollo-server-express");
+const { typeDefs, resolvers } = require("./schemas");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
 });
-
-server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -33,8 +28,11 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
-app.get("*", (req, res) => {
-res.sendFile(path.join(__dirname, "../client/build/index.html"));
+// app.get("*", (req, res) => {
+// res.sendFile(path.join(__dirname, "../client/build/index.html"));
+// });
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 app.post("/payment", (req, res) => {
@@ -64,9 +62,17 @@ app.post("/payment", (req, res) => {
     .catch((err) => console.log(err));
 });
 
+const startApolloServer = async (typeDefs, resolvers) => {
+  await server.start();
+  server.applyMiddleware({ app });
+
 db.once("open", () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
   });
 });
+};
+
+// Call the async function to start the server
+startApolloServer(typeDefs, resolvers);
