@@ -2,7 +2,7 @@ import React from "react";
 import Cart from "../components/Cart";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
-import yourLogoHere from "../assets/your-logo-here.png";
+import FTFlogo from "../assets/FTFlogo.png";
 
 const ExamplePage = () => {
   return (
@@ -10,9 +10,10 @@ const ExamplePage = () => {
       <div className="hero-head">
         <a className="" href="../">
           <img
-            src={yourLogoHere}
+            className="example__img"
+            src={FTFlogo}
             alt="your-logo-here logo"
-            width={"300px"}
+            width={"150px"}
           ></img>
         </a>
       </div>

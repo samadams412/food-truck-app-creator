@@ -12,10 +12,10 @@
   --first-color-alt-v2: hsl(var(--hue-color-second), 57%, 53%);
   /*========== COLOR FOR ALL OTHER PAGES==========*/
   /* HSL color mode */
-  --hue-color: 10; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-  --first-color: hsl(var(--hue-color), 69%, 30%);
+  --hue-color: 252; /*Uniform shade of blue*/
+  --first-color: hsl(var(--hue-color), 69%, 50%);
   --first-color-second: hsl(var(--hue-color), 69%, 60%);
-  --first-color-third: hsl(var(--hue-color), 50%, 25%);
+  --first-color-third: hsl(var(--hue-color), 69%, 70%);
   --first-color-alt: hsl(var(--hue-color), 57%, 45%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 65%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -24,6 +24,7 @@
   --input-color: hsl(var(--hue-color), 70%, 90%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
+  --white-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -175,15 +176,19 @@ img {
 
 /*========== EXAMPLE STYLES ==========*/
 .example__container {
-  background-color: var(--first-color-v2);
+  background-color: var(--first-color);
 }
 
 .example__title{
-  color: var(--first-color-alt-v2);
+  color: var(--title-color);
+}
+
+.example__img {
+  color: var(--first-color-second);
 }
 
 .example__subtitle{
-  color: var(--first-color-v2);
+  color: var(--first-color-second);
 }
 
 .example__price{
@@ -191,7 +196,7 @@ img {
 }
 
 .product__button{
-  background-color: var(--first-color-second-v2);
+  background-color: var(--first-color-second);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -200,15 +205,15 @@ img {
   margin: 0 0 var(--mb-0-25) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--first-color-second-v2);
+  background-color: var(--first-color-third);
 }
 
 .category__title {
-  color: var(--first-color-third-v2);
+  color: var(--first-color-third);
 }
 
 .product-list__title {
-  color: var(--first-color-third-v2);
+  color: var(--first-color-third);
   font-size: var(--h2-font-size);
 }
 /*========== SERVICES STYLES ==========*/
@@ -238,7 +243,7 @@ img {
 /*========== HOME STYLES ==========*/
 .home-dev__hero {
   font-family: var(--body-font);
-  background-color: var(--first-color-second);
+  background-color: var(--first-color);
 }
 
 .home-card__title h4 {

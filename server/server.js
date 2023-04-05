@@ -2,7 +2,7 @@ const cors = require("cors");
 const express = require("express");
 require("dotenv").config();
 
-const stripe = require("stripe")(process.env.STRIPE_KEY_SECRET);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const uuid = require("uuid");
 
 const { ApolloServer } = require("apollo-server-express");

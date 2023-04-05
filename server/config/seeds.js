@@ -16,6 +16,13 @@ db.once("open", async () => {
 
   const products = await Product.insertMany([
     {
+      menuItem: "Hawaiian Pizza",
+      menuDescription: "Pineapple, ham, and cheese on a crispy crust",
+      image: "pizzaPic.jpg",
+      category: categories[0]._id,
+      price: 12.99
+    },
+    {
       menuItem: "Bacon Cheese Burger",
       menuDescription: "Lots of Bacon, Cheese and Meat",
       image: "burgerPic.jpg",
@@ -88,26 +95,6 @@ db.once("open", async () => {
 
   console.log("products seeded");
 
-  await User.deleteMany();
-
-  await User.create({
-    username: "samadams123",
-    email: "samadams@testmail.com",
-    password: "password123",
-    orders: [
-      {
-        products: [products[0]._id, products[0]._id, products[1]._id],
-      },
-    ],
-  });
-
-  await User.create({
-    username: "DenisArce44",
-    email: "Denis@testmail.com",
-    password: "password123",
-  });
-
-  console.log("users seeded");
 
   process.exit();
 });
