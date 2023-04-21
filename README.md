@@ -26,7 +26,8 @@
 
 ## Installation Instructions
 
-- Access this application: [FoodTruckFix](https://food-truck-fix.herokuapp.com/)
+- ~~Access this application: [FoodTruckFix](https://food-truck-fix.herokuapp.com/)~~
+- App is currently not deployed, for installation please git clone, run 'npm install', 'npm run seed', 'npm run develop' for testing.
 
 ## Collaborating
 
