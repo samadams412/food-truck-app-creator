@@ -12,12 +12,12 @@
   --first-color-alt-v2: hsl(var(--hue-color-second), 57%, 53%);
   /*========== COLOR FOR ALL OTHER PAGES==========*/
   /* HSL color mode */
-  --hue-color: 252; /*Uniform shade of blue*/
-  --first-color: hsl(var(--hue-color), 69%, 50%);
-  --first-color-second: hsl(var(--hue-color), 69%, 60%);
+  --hue-color: 5; /*Uniform shade of blue*/
+  --first-color: hsl(var(--hue-color), 75%, 50%);
+  --first-color-second: hsl(var(--hue-color), 66%, 60%);
   --first-color-third: hsl(var(--hue-color), 69%, 70%);
   --first-color-alt: hsl(var(--hue-color), 57%, 45%);
-  --first-color-lighter: hsl(var(--hue-color), 92%, 65%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 55%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 15%);
   --text-color-light: hsl(var(--hue-color), 8%, 90%);
@@ -287,8 +287,8 @@ img {
 }
 
 .nav__button {
-  background-color: var(--first-color-lighter);
-  color: var(--first-color-third);
+  background-color: var(--first-color);
+  color: black;
 }
 
 /*========== PACKAGE INPUT STYLES ==========*/
@@ -311,7 +311,7 @@ img {
 }
 
 .footer__icon {
-  color: var(--first-color-alt);
+  color: black;
 }
 
 .footer__title {
@@ -472,4 +472,6 @@ img {
     color: #000000;
     text-shadow: 0.3x 0.3px white;
   }
+
+  
 }
