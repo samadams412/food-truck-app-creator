@@ -31,10 +31,9 @@ const HomeDev = () => {
               </div>
               <div className="card-content">
                 <div className="content home-card__title">
-                  <h4 className="home-card__title">Simple</h4>
+                  <h4 className="home-card__title">Effortless</h4>
                   <p>
-                    FTF's user-friendly interface allows even first time users
-                    to quickly get an application deployed in no time.
+                  FTF boasts an intuitive interface that empowers even newcomers to swiftly deploy their applications with ease.
                   </p>
                 </div>
               </div>
@@ -47,10 +46,9 @@ const HomeDev = () => {
               </div>
               <div className="card-content">
                 <div className="content home-card__title">
-                  <h4>Affordable</h4>
+                  <h4>Budget-Friendly</h4>
                   <p>
-                    FTF is very affordable for small business owners. Different
-                    packages are available for a one time purchase.
+                  FTF offers cost-effective solutions tailored for small business owners. Choose from a range of packages designed to fit your needs.
                   </p>
                 </div>
               </div>
@@ -63,10 +61,9 @@ const HomeDev = () => {
               </div>
               <div className="card-content">
                 <div className="content home-card__title">
-                  <h4>Ingenious</h4>
+                  <h4>Innovative Flexibility</h4>
                   <p>
-                    While maintaing its simplicity, FTF allows you to get as
-                    complex as you want in your customization.
+                  Experience the brilliance of FTF's simplicity while enjoying the freedom to explore intricate customizations, making your application truly yours.
                   </p>
                 </div>
               </div>

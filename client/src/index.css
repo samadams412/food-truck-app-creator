@@ -12,8 +12,8 @@
   --first-color-alt-v2: hsl(var(--hue-color-second), 57%, 53%);
   /*========== COLOR FOR ALL OTHER PAGES==========*/
   /* HSL color mode */
-  --hue-color: 5; /*Uniform shade of blue*/
-  --first-color: hsl(var(--hue-color), 75%, 50%);
+  --hue-color: 10; /*Uniform shade of blue*/
+  --first-color: hsl(var(--hue-color), 75%, 75%);
   --first-color-second: hsl(var(--hue-color), 66%, 60%);
   --first-color-third: hsl(var(--hue-color), 69%, 70%);
   --first-color-alt: hsl(var(--hue-color), 57%, 45%);
@@ -136,15 +136,15 @@ img {
 
 .signup__title h1 {
   font-size: var(--h1-font-size);
-  color: var(--first-color-third);
+  color: black;
 }
 .signup__label {
-  color: var(--first-color);
+  color: var(--first-color-second);
 }
 
 .signup__button {
-  background-color: var(--first-color-lighter);
-  color: var(--first-color-third);
+  background-color: var(--first-color);
+  color: black;
   font-weight: 500;
 }
 /*========== Login Styles ==========*/
@@ -157,15 +157,15 @@ img {
 
 .login__title h1 {
   font-size: var(--h1-font-size);
-  color: var(--first-color-third);
+  color: black;
 }
 .login__label {
-  color: var(--first-color);
+  color: var(--first-color-second);
 }
 
 .login__button {
-  background-color: var(--first-color-lighter);
-  color: var(--first-color-third);
+  background-color: var(--first-color);
+  color: black;
   font-weight: 500;
 }
 
@@ -205,15 +205,15 @@ img {
   margin: 0 0 var(--mb-0-25) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--first-color-third);
+  background-color: var(--first-color-second);
 }
 
 .category__title {
-  color: var(--first-color-third);
+  color: black;
 }
 
 .product-list__title {
-  color: var(--first-color-third);
+  color: black;
   font-size: var(--h2-font-size);
 }
 /*========== SERVICES STYLES ==========*/
@@ -229,13 +229,13 @@ img {
 
 
 .services__button {
-  background-color: var(--first-color-lighter);
-  color: var(--first-color-third);
+  background-color: var(--first-color);
+  color: black;
   font-weight: 500;
 }
 
 .services__content {
-  color: var(--first-color-third);
+  color: black;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
@@ -247,7 +247,7 @@ img {
 }
 
 .home-card__title h4 {
-  color: var(--first-color-alt);
+  color: black;
 }
 
 .home-card__title {
@@ -307,7 +307,7 @@ img {
 
 /* FOOTER  STYLES */
 .footer {
-  background-color: var(--first-color-lighter);
+  background-color: var(--first-color);
 }
 
 .footer__icon {
@@ -316,6 +316,7 @@ img {
 
 .footer__title {
   font-size: var(--h2-font-size);
+  color: black;
 }
 
 .footer__icon:hover {
@@ -328,16 +329,17 @@ img {
 }
 
 .contact__title {
-  color: var(--first-color-second);
+  color: black;
 }
 
 .contact__subtitle {
   color: var(--first-color-second);
+  padding-bottom: 3px;
 }
 
 .contact__button {
-  background-color: var(--first-color-lighter);
-  color: var(--first-color-third);
+  background-color: var(--first-color);
+  color: black;
   font-weight: 500;
 }
 

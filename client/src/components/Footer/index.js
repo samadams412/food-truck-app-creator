@@ -55,7 +55,7 @@ function Footer() {
             <ul>
               <li>
                 <a className="footer__icon mt-2" href="/updatesAhead">
-                  2022: Updates Ahead
+                  2023: Updates Ahead
                 </a>
               </li>
               <li>
@@ -68,7 +68,7 @@ function Footer() {
         </div>
         <div className="content">
           <div className="control level-item">
-            <a href="https://github.com/Djay8400/food-truck-app-creator">
+            <a href="https://github.com/samadams412/food-truck-app-creator">
               <div className="tags has-addons">
                 <span className="tag is-dark">FTFdevs</span>
                 <span className="tag is-info">MIT license</span>

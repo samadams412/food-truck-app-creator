@@ -42,11 +42,11 @@ const Services = () => {
         <div id="app" className="row columns is-multiline">
           <div className="column is-4">
             <div className="card large">
-              <div className="card-image">
+              {/* <div className="card-image">
                 <figure className="image is-16by9">
                   <img src="./images/standardPlan.jpg" alt="" />
                 </figure>
-              </div>
+              </div> */}
               <div className="card-content">
                 <div className="content">
                   <p className="title is-4 no-padding services__subtitle">
@@ -55,9 +55,9 @@ const Services = () => {
                 </div>
 
                 <div className="content services__content">
-                  <p>* Fully functioning payment processing</p>
-                  <p>* 10 Menu items with fully custom cards</p>
-                  <p>* One month subscription to FTF</p>
+                  <p>* Seamless Payment Processing</p>
+                  <p>* 10 Menu Items with Elegant Custom Cards</p>
+                  <p>* One-Month Subscription to Food Truck Fix</p>
                 </div>
                 <div className="content">
                   {Auth.loggedIn() ? (
@@ -77,7 +77,7 @@ const Services = () => {
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/signup">
+                      <Link to="/signup" className="services__button">
                         Log In to View
                       </Link>
                     </button>
@@ -88,23 +88,23 @@ const Services = () => {
           </div>
           <div v-for="card in cardData" className="column is-4">
             <div className="card large">
-              <div className="card-image">
+              {/* <div className="card-image">
                 <figure className="image is-16by9">
                   <img src="./images/deluxePlan.png" alt="" />
                 </figure>
-              </div>
+              </div> */}
               <div className="card-content">
                 <div className="content">
                   <p className="title is-4 no-padding services__subtitle">
-                    Deluxe Package
+                    Enhanced Package
                   </p>
                 </div>
 
                 <div className="content services__content">
                   <p>* Includes everything from Standard Package, Plus</p>
-                  <p>* 5 extra Menu items with fully custom cards</p>
-                  <p>* Customized Logo and QR codes</p>
-                  <p>* Three months subscription to FTF</p>
+                  <p>* Additional 5 Menu Items with Distinctive Custom Cards</p>
+                  <p>* Personalized Logo and Unique QR Codes</p>
+                  <p>* Three-Month Subscription to Food Truck Fix</p>
                 </div>
                 <div className="content">
                   {Auth.loggedIn() ? (
@@ -124,7 +124,7 @@ const Services = () => {
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/signup" services__button>
+                      <Link to="/signup" className="services__button">
                         Log In to View
                       </Link>
                     </button>
@@ -135,11 +135,11 @@ const Services = () => {
           </div>
           <div v-for="card in cardData" key="card.id" className="column is-4">
             <div className="card large">
-              <div className="card-image">
+              {/* <div className="card-image">
                 <figure className="image is-16by9">
                   <img src="./images/premiumPlan.jpg" alt="" />
                 </figure>
-              </div>
+              </div> */}
               <div className="card-content">
                 <div className="content">
                   <p className="title is-4 no-padding services__subtitle">
@@ -148,10 +148,10 @@ const Services = () => {
                 </div>
 
                 <div className="content services__content">
-                  <p>* Includes everything from Deluxe Package, Plus</p>
-                  <p>* 20 Extra Menu items with fully custom cards</p>
-                  <p>* Social Media Integration with location bursts</p>
-                  <p>* One year subscription to FTF</p>
+                  <p>* All Features in the Enhanced Package, Plus</p>
+                  <p>* 20 Extra Menu Items with Exquisite Custom Cards</p>
+                  <p>* Seamless Social Media Integration with Location Bursts</p>
+                  <p>* One-Year Subscription to Food Truck Fix</p>
                 </div>
                 <div className="content">
                   {Auth.loggedIn() ? (
@@ -171,7 +171,7 @@ const Services = () => {
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/login" className="">
+                      <Link to="/login" className="services__button">
                         Log In to View
                       </Link>
                     </button>

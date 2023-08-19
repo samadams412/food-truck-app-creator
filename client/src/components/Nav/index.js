@@ -60,7 +60,7 @@ function Nav() {
         </div>
         <div className="navbar-item">
           <Link to="/example" className="nav__item">
-            Example
+            Mock Up
           </Link>
         </div>
 
