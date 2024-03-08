@@ -45,8 +45,8 @@
 }
 
 .cart__button{
-  background-color: var(--first-color-second-v2);
-  color: var(--first-color-third);
+  background-color: var(--first-color);
+  color: var(black);
   font-weight: 500;
 }
 
