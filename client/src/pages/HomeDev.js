@@ -12,7 +12,7 @@ const HomeDev = () => {
         </div>
         <div className="hero-body">
           <div className="container has-text-centered">
-            <h1 className="home-dev__title">
+            <h1 className="home-dev__title" id="hero-text">
               Looking to take your business to the next level?
             </h1>
             <h2 className="home-dev__subtitle">
